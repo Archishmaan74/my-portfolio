@@ -50,7 +50,7 @@ export const personal = {
     "My work spans enterprise banking applications and independent full-stack projects. I enjoy moving between frontend experience and backend implementation, understanding the complete problem, and finding improvements that make software more dependable.",
   aboutDetails:
     "From reusable React components and REST APIs to automated tests, database tuning, and production troubleshooting, I aim to make every layer easier to understand and maintain.",
-  email: "your-email@example.com",
+  email: "archishmaan.upa4@gmail.com",
   github: "https://github.com/Archishmaan74",
   linkedin: "https://www.linkedin.com/in/archishmaan-upadhyaya-880642156/",
   resume:
