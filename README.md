@@ -1,75 +1,139 @@
-# React + TypeScript + Vite
+# Archishmaan Upadhyaya — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio showcasing my work as a frontend and full-stack engineer, including selected projects, professional experience, technical skills, and engineering impact.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- TypeScript
+- Vite
+- Tailwind CSS v4
+- Motion for React
+- Lucide React
+- Docker
+- Nginx
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive portfolio layout
+- Sections for introduction, about, engineering impact, experience, projects, skills, and contact
+- Animated interface elements
+- Project links to live demos and source repositories
+- Production build served with Nginx in Docker
+- Nginx fallback routing for client-side navigation
 
-## Expanding the ESLint configuration
+## Projects
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### ArchBlog
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+A full-stack blogging platform built with React, TypeScript, Spring Boot, and PostgreSQL. It includes authentication, API error handling, and automated tests.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Live demo: https://archblog-frontend.onrender.com
+- Source code: https://github.com/Archishmaan74/ArchBlog
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Guest House Management
 
+A guest-house management application project built around room and booking workflows, using React, Spring Boot, PostgreSQL, and REST APIs.
+
+- Source code: https://github.com/Archishmaan74/Om-Guest-House-Management-System
+
+## Run Locally
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Install dependencies
+
+```bash
+npm ci
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+### Start the development server
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm run dev
 ```
+
+Vite prints the local development URL in the terminal, usually http://localhost:5173.
+
+### Create a production build
+
+```bash
+npm run build
+```
+
+The production files are generated in the `dist` directory.
+
+### Preview the production build
+
+```bash
+npm run preview
+```
+
+## Run with Docker
+
+Docker builds the app with Node.js and serves the production files through Nginx.
+
+### Build the image
+
+Run this from the repository root, where the `Dockerfile`, `nginx.conf`, and `.dockerignore` files are located.
+
+```bash
+docker build -t my-portfolio .
+```
+
+### Start the container
+
+```bash
+docker run -d -p 8080:80 --name my-portfolio --restart unless-stopped my-portfolio
+```
+
+Open http://localhost:8080 to view the Dockerized portfolio.
+
+### Stop and restart the container
+
+```bash
+docker stop my-portfolio
+docker start my-portfolio
+```
+
+To remove the container after stopping it:
+
+```bash
+docker rm my-portfolio
+```
+
+## Available Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Starts the Vite development server |
+| `npm run build` | Type-checks the project and creates a production build |
+| `npm run lint` | Runs ESLint |
+| `npm run preview` | Serves the production build locally |
+
+## Repository Structure
+
+```text
+src/
+  components/
+    Header/
+    Main/
+    Footer/
+  data/
+  App.tsx
+  index.css
+  main.tsx
+Dockerfile
+nginx.conf
+.dockerignore
+package.json
+```
+
+## Connect
+
+- GitHub: https://github.com/Archishmaan74
+
+For opportunities involving frontend or full-stack engineering, feel free to connect through GitHub.
