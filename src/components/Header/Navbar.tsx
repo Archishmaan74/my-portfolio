@@ -1,14 +1,15 @@
+import { Download } from "lucide-react";
 import { personal } from "../../data/personal";
 
 const Navbar = () => {
   return (
-    <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
-      <a href="#home" className="text-xl font-semibold tracking-tight">
+    <nav className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4 lg:px-10">
+      <a href="#home" className="shrink-0 text-xl font-semibold tracking-tight">
         {personal.brand}
         <span className="text-violet-400">.</span>
       </a>
 
-      <div className="hidden items-center gap-8 text-sm text-zinc-400 md:flex">
+      <div className="hidden items-center gap-7 text-sm text-zinc-400 md:flex">
         <a href="#about" className="transition hover:text-white">
           About
         </a>
@@ -23,12 +24,25 @@ const Navbar = () => {
         </a>
       </div>
 
-      <a
-        href="#contact"
-        className="rounded-full border border-white/15 px-5 py-2.5 text-sm transition hover:border-violet-400 hover:bg-violet-400/10"
-      >
-        Let's talk <span className="ml-1">↗</span>
-      </a>
+      <div className="flex shrink-0 items-center gap-2">
+        <a
+          href={personal.resume}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Open resume"
+          className="hidden items-center gap-2 rounded-full border border-white/15 px-4 py-2.5 text-sm transition hover:border-violet-400 hover:bg-violet-400/10 sm:inline-flex"
+        >
+          <Download size={15} />
+          Resume
+        </a>
+
+        <a
+          href="#contact"
+          className="rounded-full border border-white/15 px-4 py-2.5 text-sm transition hover:border-violet-400 hover:bg-violet-400/10 sm:px-5"
+        >
+          Let's talk <span className="ml-1">↗</span>
+        </a>
+      </div>
     </nav>
   );
 };
