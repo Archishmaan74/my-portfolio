@@ -1,9 +1,13 @@
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
+
 const App = () => {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-[#0b0b10] text-white">
-      <h1 className="text-4xl font-bold text-violet-400">
-        Portfolio coming soon.
-      </h1>
+    <main className="min-h-screen overflow-hidden bg-[#09090d] text-white">
+      <Header />
+      <Main />
+      <Footer />
     </main>
   );
 };
