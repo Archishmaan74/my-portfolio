@@ -54,7 +54,7 @@ export const personal = {
   github: "https://github.com/Archishmaan74",
   linkedin: "https://www.linkedin.com/in/archishmaan-upadhyaya-880642156/",
   resume:
-    "https://drive.google.com/file/d/1JfkjtuWRJ80eGASTqd2LNjq6YqoLWuaV/view?usp=sharing",
+    "https://drive.google.com/file/d/1X9U-Pub_8RO3snAh81pSnDdADfq_IHf1/view?usp=sharing",
   yearsExperience: "3+ years",
   focus: "Full-stack",
   quality: "Quality-first",
