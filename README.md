@@ -2,6 +2,11 @@
 
 A personal portfolio showcasing my work as a frontend and full-stack engineer, including selected projects, professional experience, technical skills, and engineering impact.
 
+## Live Portfolio
+
+- Netlify: https://archishmaan-portfolio.netlify.app/
+- Render: https://my-portfolio-f1r8.onrender.com/
+
 ## Tech Stack
 
 - React
