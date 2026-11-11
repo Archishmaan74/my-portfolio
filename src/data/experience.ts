@@ -5,21 +5,27 @@ export const experience = [
     company: "Accenture",
     location: "Pune, India",
     story:
-      "I work across the full-stack development lifecycle for enterprise banking applications, translating business requirements into maintainable frontend features and backend services. My work spans React and TypeScript interfaces, Java and Spring Boot services, performance optimization, automated testing, accessibility, and production troubleshooting.",
+      "I work across the full-stack development lifecycle for enterprise investment and retail banking applications. My responsibilities span building responsive React and TypeScript interfaces, developing Java and Spring Boot services, integrating APIs, optimizing application performance, strengthening automated testing, and troubleshooting production issues. I also contribute to accessibility initiatives and application analytics to improve usability and application insights.",
     focus: [
       "Full-stack development",
+      "API integration and application architecture",
       "Performance optimization",
       "Testing and code quality",
-      "Accessibility",
+      "Accessibility and analytics",
     ],
     details: [
-      "Developed and maintained enterprise banking interfaces using React, TypeScript, and Material UI.",
-      "Built Java and Spring Boot services using Controller-Service-Repository architecture.",
-      "Reduced Micro Frontend portfolio build time from 40 to 30 minutes by optimizing the AWS CodePipeline development build.",
-      "Optimized backend unit tests using JUnit and Mockito, reducing test execution time by 20%.",
-      "Implemented LaunchDarkly feature flags with role-based access and dynamic feature visibility.",
-      "Optimized SQL queries, implemented transaction-history pagination, and added duplicate transaction detection.",
-      "Investigated UAT and production issues using Datadog and contributed to accessibility requirements and WCAG implementation.",
+      "Developed enterprise-grade frontend applications using React and TypeScript for investment and retail banking platforms.",
+      "Built Java and Spring Boot backend services across monolithic and microservices architectures using the Controller-Service-Repository pattern.",
+      "Engineered responsive, mobile-first interfaces using Material UI.",
+      "Integrated React applications with Spring Boot services using OpenAPI-generated client bundles.",
+      "Optimized AWS CodePipeline builds, reducing Micro Frontend portfolio build time from 40 to 30 minutes.",
+      "Optimized backend unit tests using JUnit and Mockito, reducing execution time by 20%.",
+      "Implemented LaunchDarkly feature flags with role-based access control.",
+      "Optimized SQL queries and database indexing, and implemented end-to-end transaction-history pagination.",
+      "Implemented duplicate transaction detection with exception handling to prevent transaction reprocessing.",
+      "Investigated UAT and production issues using Datadog, and implemented frontend and backend fixes.",
+      "Served as ADA SPOC, collaborating with clients on accessibility requirements and WCAG implementation.",
+      "Implemented application analytics to capture user interactions and feature engagement.",
     ],
     skills: [
       "React",
@@ -29,6 +35,7 @@ export const experience = [
       "Spring Boot",
       "Spring Data JPA",
       "REST APIs",
+      "OpenAPI",
       "SQL",
       "PostgreSQL",
       "JUnit",
@@ -45,7 +52,7 @@ export const experience = [
     company: "Accenture",
     location: "Pune, India",
     story:
-      "I built my foundation in full-stack enterprise software engineering by improving React applications, strengthening automated tests, and contributing to backend transaction workflows. Working across frontend development, backend transaction integrity, code reviews, accessibility, deployments, and issue resolution helped me learn how to deliver reliable features in a collaborative engineering environment.",
+      "I built my foundation in enterprise software engineering by developing React applications, improving automated test coverage, and contributing to backend transaction workflows. I worked across frontend development, API integration, transaction integrity, accessibility, code reviews, and deployment coordination to deliver reliable banking application features.",
     focus: [
       "Full-stack development",
       "Reusable React components",
@@ -53,12 +60,14 @@ export const experience = [
       "Transaction integrity",
     ],
     details: [
-      "Improved frontend test coverage from 89% to 95% using Vitest and automated tests.",
-      "Refactored repetitive logic into reusable React hooks through code reviews and component improvements.",
-      "Enhanced transaction request validation and handling, helping reduce transaction-related defects by 50%.",
-      "Resolved CORS configuration issues and implemented fallback interfaces to prevent blank pages after Redux state resets.",
-      "Improved transaction integrity using Spring transaction management and exception handling.",
-      "Contributed to WCAG accessibility improvements and coordinated QA deployments using AWS.",
+      "Improved frontend test coverage from 89% to 95% using Vitest and unit and integration testing.",
+      "Conducted code reviews and refactored repetitive logic into reusable React hooks.",
+      "Enhanced transaction request validation and handling, reducing transaction-related defects by 50%.",
+      "Resolved CORS configuration issues for newly implemented REST APIs.",
+      "Implemented fallback UI screens to prevent blank pages after Redux state resets.",
+      "Resolved transaction integrity issues using Spring's @Transactional annotation and exception handling.",
+      "Implemented accessibility improvements following WCAG guidelines to support ADA compliance.",
+      "Served as Deployment SPOC, coordinating deployments and deploying code to QA environments through AWS.",
     ],
     skills: [
       "React",
@@ -80,11 +89,11 @@ export const experience = [
   },
   {
     period: "JUN 2022 — JUL 2022",
-    role: "Frontend Development Intern",
+    role: "Software Engineer Intern",
     company: "HCL Technologies",
     location: "Noida, India",
     story:
-      "I started my professional development journey by building a React-based employee management application. This hands-on experience helped me apply JavaScript fundamentals to real UI workflows and understand component-based development, navigation, and data management.",
+      "Started my professional development journey by building a React-based employee management application. This experience helped me apply JavaScript fundamentals to practical UI workflows and understand component-based development, navigation, and client-side data management.",
     focus: [
       "React development",
       "Client-side routing",
@@ -92,9 +101,9 @@ export const experience = [
       "Local storage",
     ],
     details: [
-      "Developed an employee management application using React and JavaScript.",
-      "Implemented navigation using React Router DOM.",
-      "Built employee create, read, update, and delete workflows using browser local storage.",
+      "Developed a React-based employee management application using JavaScript.",
+      "Implemented React Router DOM for seamless navigation.",
+      "Built CRUD functionality to manage employee records using browser local storage.",
     ],
     skills: [
       "React",
@@ -111,7 +120,7 @@ export const experience = [
 export const achievements = [
   {
     value: "40 → 30 min",
-    label: "MFE build time",
+    label: "Micro Frontend build time",
   },
   {
     value: "89% → 95%",
